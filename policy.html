@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Word Hockey Forum</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header" id="header">
+				<div class="header__left">
+					<a href="#" class="header__logo"></a>
+					<div class="dropdown">
+						<div class="dropbtn">RUS</div>
+						<div class="dropdown-content">
+							<a href="#">ENG</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="/index.html" class="menu__link">главная</a></li>
+							<li><a href="/news.html">О форуме</a></li>
+							<li><a href="#">Спикеры</a></li>
+							<li><a href="/policy.html">Программа</a></li>
+							<li><a href="#">Медиа</a></li>
+						</ul>
+						<a onclick="togglePopup()" class="header__btn-mob" href="#">Войти /
+							регистрация
+						</a>
+						<div class="header__menu-mob">
+							<div class="header__social-content">
+								<div class="header__social-title">Расскажите о WHF в своих соцсетях</div>
+								<ul class="socials header__social">
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-tg"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-vk"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-ok"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-veiber"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-whats"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-icon"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-contact">
+								<div class="header-contact__img">
+									<img src="images/logo-min.svg" alt="" width="85.133px" height="53.655px">
+									<img src="images/line-mob.svg" alt="" width="1.844px" height="44.31px">
+									<img src="images/liga-mob.svg" alt="" width="85.313px" height="27.776px">
+								</div>
+								<p class="header-contact__text">Оргкомитет WHF<a
+										href="mailto:info@whf.hockey">info@whf.hockey</a>
+								</p>
+								<p class="header-contact__mintext">По вопросам организации и сотрудничества</p>
+							</div>
+							<div class="header__baner">
+								<img src="images/Больше проектов FHR mob.png" alt="">
+							</div>
+							<div class="header__proect">
+								<div class="header__proect-item">
+									<p class="header__proect-text">Всероссийская хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="vhlru.ru" class="header__proect-link">vhlru.ru</a>
+										<a href="vhlru.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Национальная молодёжная хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="nmhl.fhr.ru" class="header__proect-link">nmhl.fhr.ru</a>
+										<a href="nmhl.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Все о детском и юношеском хоккее в России</p>
+									<div class="proect-item__list">
+										<a href="junior.fhr.ru" class="header__proect-link">junior.fhr.ru</a>
+										<a href="junior.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Образовательный хоккейный портал «играйвроссии.рф»</p>
+									<div class="proect-item__list">
+										<a href="играйвроссии.рф" class="header__proect-link">играйвроссии.рф </a>
+										<a href="играйвроссии.рф" class="header__proect-btn"></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__confic">Политика конфиденциальности. Для лиц старше 18 лет. Дизайн SportNoise
+								<br />©
+								World Hockey Forum. 1991—2023.
+							</div>
+						</div>
+					</nav>
+					<a onclick="togglePopup()" class="header__btn" href="#">Войти /
+						регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="policy">
+		<div class="policy__container">
+			<div class="policy__title">Соглашение об обработке персональных данных</div>
+			<div class="policy__content">Соглашение об обработке персональных данных (далее по тексту — Соглашение)
+				является публичной офертой. Термины, применяемые в настоящем Соглашении:
+				<br/><br/>
+				Сайт — это совокупность текстов, графических элементов, дизайна, изображений, программного кода, фото- и
+				видеоматериалов и иных результатов интеллектуальной деятельности Администрации Сайта, содержащихся в сети
+				Интернет под доменным именем <a class="policy__link" href="https://www.whf.hockey">www.whf.hockey</a>
+				<br/><br/>
+				Администрация Сайта — это общества и лица, обладающие правами администрирования Сайта.
+				<br/><br/>
+				Пользователь — это любое лицо, осуществившее вход на Сайт, заполнившее поля онлайн-форм на Сайте и принявшее
+				условия настоящего Соглашения.
+				<br/><br/>
+				Персональные данные — данные, указанные Пользователем в онлайн-формах Сайта (имя, адрес электронной почты,
+				номер телефона, почтовый адрес).
+				<br/><br/>
+				Обработка персональных данных — перечень действий с персональными данными Пользователя, заполнившего поля
+				онлайн-форм: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение),
+				извлечение, использование, передача (распространение, предоставление доступа), обезличивание, блокирование,
+				удаление, уничтожение персональных данных Пользователя, отправившего запрос, передача по требованию суда, в
+				т. ч., третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного
+				доступа.
+				<br/><br/>
+				1. Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте <a class="policy__link" href="https://www.whf.hockey">www.whf.hockey</a>, (далее — Сайт),
+				принадлежащем Федерации Хоккея России (далее — Администрация Сайта), путем заполнения полей форм
+				онлайн-заявок, Пользователь:
+				<br/><br/>
+				<ul>
+					<li>подтверждает, что все указанные им данные принадлежат лично ему,</li>
+					<li>подтверждает и признает, что им внимательно в полном объеме прочитано данное Соглашение и условия обработки
+				Администрацией Сайта его персональных данных, указываемых им в полях онлайн-заявок, текст соглашения и
+				условия обработки персональных данных ему понятны;</li>
+					<li>дает согласие на обработку Администрацией Сайта предоставляемых в составе информации персональных данных в
+				целях заключения между ним и Администрацией Сайта настоящего Соглашения, а также его последующего
+				исполнения;</li>
+					<li>выражает согласие с условиями обработки персональных данных без оговорок и ограничений, а именно с
+				совершением Администрацией Сайта действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006
+				N 152-ФЗ «О персональных данных», и подтверждает, что, давая такое согласие, он действует свободно, по своей
+				волей и в своих интересах.</li>
+				</ul>
+				<br/>
+				2. Администрация Сайта использует персональные данные Пользователя для:
+				<br/><br/>
+				<ul>
+					<li>обработки персональных данных, которые необходимы для участия в мероприятии;</li>
+					<li>создания, анализа и мониторинга клиентской базы;</li>
+					<li>информирования Пользователя.</li>
+				</ul>	
+				<br/>		
+				3. Администрация Сайта вправе обрабатывать персональные данные посредством внесения их в электронные базы
+				данных, включения в списки (реестры) и внутренние отчетные формы. Обработка персональных данных может быть,
+				как автоматизированная, так и без использования средств автоматизации.
+				<br/><br/>
+				4. Принимая условия настоящего Соглашения, Пользователь также соглашается с получением информационной и(или)
+				рекламной рассылки по электронной почте от Администрации Сайта.
+				<br/><br/>
+				5. Соглашение действует бессрочно с момента предоставления Пользователем своих данных и может быть отозвано
+				Пользователем в любой момент путем направления Пользователем соответствующего распоряжения или заявления в
+				простой письменной форме на адрес электронной почты info@whf.hockey
+				<br/><br/>
+				6. Администрация Сайта имеет право вносить изменения в настоящее Соглашение. При внесении изменений в
+				актуальной редакции указывается дата последнего обновления. Новая редакция Соглашения вступает в силу с
+				момента ее размещения, если иное не предусмотрено новой редакцией Соглашения.
+				<br/><br/>
+				7. Действующая редакция Соглашения находится на Сайте на странице по адресу:
+				<a class="policy__link" href="https://whf.hockey/page/soglasie-na-obrabotku-personalnykh-dannykh">https://whf.hockey/page/soglasie-na-obrabotku-personalnykh-dannykh</a>
+				<br/><br/>
+				8. К настоящему Соглашению и отношениям между Пользователем и Администрацией Сайта, возникающим в связи с
+				применением Соглашения, подлежит применению право Российской Федерации.</div>
+		</div>
+		<div class="footer__policy-content">
+			<div class="forum__btn">
+				<a href="/index.html" class="forum__btn-link"></a>
+				<a href="/index.html">
+					<p class="forum__btn-text">Вернуться на главную</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="cookie-bar">
+		<div class="cookie-bar__content">
+			<img src="images/cookie.svg" alt="">
+			<p class="cookie-bar__text">На сайте используются cookies. Продолжая использовать сайт, вы принимаете условия
+			</p>
+			<button class="cookie-btn">Принять</button>
+		</div>
+	</div>
+
+	<div class="popup" id="popup">
+		<div class="popup-content">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close" onclick="togglePopup()"></span>
+			<h2>вход</h2>
+			<div class="popup-entr">
+				<label for="email">E-mail</label>
+				<input type="text" id="email" placeholder="">
+				<label for="psw">Пароль</label>
+				<div class="password-icon">
+					<input type="password" id="passwordInput" placeholder="">
+					<i class="password-icon__img" onclick="togglePassword()" id="toggleIcon"></i>
+				</div>
+			</div>
+			<div class="popup-entr__btn">
+				<div class="popup-entr__checkbox">
+					<input type="checkbox" id="rememberMe" name="rememberMe" class="styled-checkbox"
+						onchange="changeImage()">
+					<label for="rememberMe" class="custom-checkbox">Запомнить</label>
+				</div>
+				<button class="entr__box-btn" onclick="login()">Войти</button>
+			</div>
+			<div class="popup__btn-end">
+				<button class="forgot-password-btn" onclick="openPopup()">Забыли пароль?</button>
+				<button class="reg-btn" onclick="openSignupPage()">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-end" id="popup-end">
+		<div class="popup-content__end">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close-end" onclick="closePopup()"></span>
+			<h2>Восстановление пароля</h2>
+			<label for="email">Email</label>
+			<form>
+				<input type="email" id="email" name="email" required>
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

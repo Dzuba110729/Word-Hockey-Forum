@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Word Hockey Forum</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header" id="header">
+				<div class="header__left">
+					<a href="#" class="header__logo"></a>
+					<div class="dropdown">
+						<div class="dropbtn">RUS</div>
+						<div class="dropdown-content">
+							<a href="#">ENG</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="/index.html" class="menu__link">главная</a></li>
+							<li><a href="/news.html">О форуме</a></li>
+							<li><a href="#">Спикеры</a></li>
+							<li><a href="/policy.html">Программа</a></li>
+							<li><a href="#">Медиа</a></li>
+						</ul>
+						<a onclick="togglePopup()" class="header__btn-mob" href="#">Войти /
+							регистрация
+						</a>
+						<div class="header__menu-mob">
+							<div class="header__social-content">
+								<div class="header__social-title">Расскажите о WHF в своих соцсетях</div>
+								<ul class="socials header__social">
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-tg"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-vk"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-ok"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-veiber"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-whats"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-icon"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-contact">
+								<div class="header-contact__img">
+									<img src="images/logo-min.svg" alt="" width="85.133px" height="53.655px">
+									<img src="images/line-mob.svg" alt="" width="1.844px" height="44.31px">
+									<img src="images/liga-mob.svg" alt="" width="85.313px" height="27.776px">
+								</div>
+								<p class="header-contact__text">Оргкомитет WHF<a
+										href="mailto:info@whf.hockey">info@whf.hockey</a>
+								</p>
+								<p class="header-contact__mintext">По вопросам организации и сотрудничества</p>
+							</div>
+							<div class="header__baner">
+								<img src="images/Больше проектов FHR mob.png" alt="">
+							</div>
+							<div class="header__proect">
+								<div class="header__proect-item">
+									<p class="header__proect-text">Всероссийская хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="vhlru.ru" class="header__proect-link">vhlru.ru</a>
+										<a href="vhlru.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Национальная молодёжная хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="nmhl.fhr.ru" class="header__proect-link">nmhl.fhr.ru</a>
+										<a href="nmhl.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Все о детском и юношеском хоккее в России</p>
+									<div class="proect-item__list">
+										<a href="junior.fhr.ru" class="header__proect-link">junior.fhr.ru</a>
+										<a href="junior.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Образовательный хоккейный портал «играйвроссии.рф»</p>
+									<div class="proect-item__list">
+										<a href="играйвроссии.рф" class="header__proect-link">играйвроссии.рф </a>
+										<a href="играйвроссии.рф" class="header__proect-btn"></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__confic">Политика конфиденциальности. Для лиц старше 18 лет. Дизайн SportNoise
+								<br />©
+								World Hockey Forum. 1991—2023.
+							</div>
+						</div>
+					</nav>
+					<a onclick="togglePopup()" class="header__btn" href="#">Войти /
+						регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="registr" id="signupPopup">
+		<div class="signup-content">
+			<h2>Регистрация WHF</h2>
+			<p>Регистрация дает право зрителям задавать вопросы и оставлять комментарии во время прямых
+				трансляций</p>
+			<h3>Персональные данные</h3>
+			<div class="signup-container">
+				<form name="signup">
+					<div class="signup-wrap">
+						<div class="signup-item">
+							<label>Фамилия</label>
+							<input type="text">
+						</div>
+						<div class="signup-item">
+							<label>Имя</label>
+							<input type="text">
+						</div>
+						<div class="signup-item">
+							<label>Отчество</label>
+							<input type="text">
+						</div>
+						<div class="signup-item">
+							<label>Дата рождения</label>
+							<input type="text">
+						</div>
+					</div>
+				</form>
+			</div>
+			<h3>Бизнес информация</h3>
+			<div class="signup-container">
+				<form name="signup">
+					<div class="signup-wrap">
+						<div class="signup-item">
+							<label>Cтрана</label>
+							<input type="text">
+						</div>
+						<div class="signup-item">
+							<label>Компания</label>
+							<input type="text">
+						</div>
+						<div class="signup-item">
+							<label>Должность</label>
+							<input class="singnup-item__text-1" type="text">
+						</div>
+					</div>
+					<div class="signup-wrap">
+						<div class="signup-item">
+							<label>Категория участия</label>
+							<div class="signup-item__list">
+								<label>
+									<input class="signup-dols" type="checkbox">
+									<span>Зритель</span>
+								</label>
+								<label>
+									<input class="signup-dols" type="checkbox">
+									<span>Спикер</span>
+								</label>
+								<label>
+									<input class="signup-dols" type="checkbox">
+									<span>Пресса</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<h3>Данные для входа</h3>
+			<div class="signup-container">
+				<form name="signup">
+					<div class="signup-wrap">
+						<div class="signup-item">
+							<label>E-mail</label>
+							<input class="singnup-item__text-1" type="email">
+						</div>
+						<div class="signup-item">
+							<label>Пароль</label>
+							<input type="password">
+						</div>
+						<div class="signup-item">
+							<label>Повторите пароль</label>
+							<input type="password">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="signup-container signup-policy">
+				<div class="signup-text">
+					Создавая новую учетную запись, Вы соглашаетесь на обработку <a href="/policy.html">персональных
+						данных</a>
+				</div>
+				<div class="btn">
+					<input type="submit" value="Создать учЁтную запись">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer__forum footer__reg">
+		<div class="footer__forum-social">
+			<div class="forum-social__text">Поделиться</div>
+			<ul class="socials">
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-tg"></a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-vk"></a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-ok"></a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-veiber"></a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-whats"></a>
+				</li>
+				<li class="socials-item">
+					<a href="#" class="socials-link socials-link-icon"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="forum__btn">
+			<a href="/index.html" class="forum__btn-link"></a>
+			<a href="/index.html">
+				<p class="forum__btn-text">Вернуться на главную</p>
+			</a>
+		</div>
+	</footer>
+
+	<div class="cookie-bar">
+		<div class="cookie-bar__content">
+			<img src="images/cookie.svg" alt="">
+			<p class="cookie-bar__text">На сайте используются cookies. Продолжая использовать сайт, вы принимаете условия
+			</p>
+			<button class="cookie-btn">Принять</button>
+		</div>
+	</div>
+
+
+	<div class="popup" id="popup">
+		<div class="popup-content">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close" onclick="togglePopup()"></span>
+			<h2>вход</h2>
+			<div class="popup-entr">
+				<label for="email">E-mail</label>
+				<input type="text" id="email" placeholder="">
+				<label for="psw">Пароль</label>
+				<div class="password-icon">
+					<input type="password" id="passwordInput" placeholder="">
+					<i class="password-icon__img" onclick="togglePassword()" id="toggleIcon"></i>
+				</div>
+			</div>
+			<div class="popup-entr__btn">
+				<div class="popup-entr__checkbox">
+					<input type="checkbox" id="rememberMe" name="rememberMe" class="styled-checkbox"
+						onchange="changeImage()">
+					<label for="rememberMe" class="custom-checkbox">Запомнить</label>
+				</div>
+				<button class="entr__box-btn" onclick="login()">Войти</button>
+			</div>
+			<div class="popup__btn-end">
+				<button class="forgot-password-btn" onclick="openPopup()">Забыли пароль?</button>
+				<button class="reg-btn" onclick="openSignupPage()">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Всплывающее окно для восстановления пароля -->
+	<div class="popup-end" id="popup-end">
+		<div class="popup-content__end">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close-end" onclick="closePopup()"></span>
+			<h2>Восстановление пароля</h2>
+			<label for="email">Email</label>
+			<form>
+				<input type="email" id="email" name="email" required>
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

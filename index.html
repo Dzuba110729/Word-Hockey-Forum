@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Word Hockey Forum</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header" id="header">
+				<div class="header__left">
+					<a href="#" class="header__logo"></a>
+					<div class="dropdown">
+						<div class="dropbtn">RUS</div>
+						<div class="dropdown-content">
+							<a href="#">ENG</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="#" class="menu__link">главная</a></li>
+							<li><a href="/news.html">О форуме</a></li>
+							<li><a href="#">Спикеры</a></li>
+							<li><a href="/policy.html">Программа</a></li>
+							<li><a href="#">Медиа</a></li>
+						</ul>
+						<a onclick="togglePopup()" class="header__btn-mob" href="#">Войти /
+							регистрация
+						</a>
+						<div class="header__menu-mob">
+							<div class="header__social-content">
+								<div class="header__social-title">Расскажите о WHF в своих соцсетях</div>
+								<ul class="socials header__social">
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-tg"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-vk"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-ok"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-veiber"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-whats"></a>
+									</li>
+									<li class="socials-item">
+										<a href="#" class="socials-link socials-link-icon"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-contact">
+								<div class="header-contact__img">
+									<img src="images/logo-min.svg" alt="" width="85.133px" height="53.655px">
+									<img src="images/line-mob.svg" alt="" width="1.844px" height="44.31px">
+									<img src="images/liga-mob.svg" alt="" width="85.313px" height="27.776px">
+								</div>
+								<p class="header-contact__text">Оргкомитет WHF<a
+										href="mailto:info@whf.hockey">info@whf.hockey</a>
+								</p>
+								<p class="header-contact__mintext">По вопросам организации и сотрудничества</p>
+							</div>
+							<div class="header__baner">
+								<img src="images/Больше проектов FHR mob.png" alt="">
+							</div>
+							<div class="header__proect">
+								<div class="header__proect-item">
+									<p class="header__proect-text">Всероссийская хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="vhlru.ru" class="header__proect-link">vhlru.ru</a>
+										<a href="vhlru.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Национальная молодёжная хоккейная лига</p>
+									<div class="proect-item__list">
+										<a href="nmhl.fhr.ru" class="header__proect-link">nmhl.fhr.ru</a>
+										<a href="nmhl.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Все о детском и юношеском хоккее в России</p>
+									<div class="proect-item__list">
+										<a href="junior.fhr.ru" class="header__proect-link">junior.fhr.ru</a>
+										<a href="junior.fhr.ru" class="header__proect-btn"></a>
+									</div>
+								</div>
+								<div class="header__proect-item">
+									<p class="header__proect-text">Образовательный хоккейный портал «играйвроссии.рф»</p>
+									<div class="proect-item__list">
+										<a href="играйвроссии.рф" class="header__proect-link">играйвроссии.рф </a>
+										<a href="играйвроссии.рф" class="header__proect-btn"></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__confic">Политика конфиденциальности. Для лиц старше 18 лет. Дизайн SportNoise
+								<br />©
+								World Hockey Forum. 1991—2023.
+							</div>
+						</div>
+					</nav>
+					<a onclick="togglePopup()" class="header__btn" href="#">Войти /
+						регистрация
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="about">
+		<div class="container">
+			<div class="about__title">VIII международный хоккейный форум «world hockey forum»</div>
+			<div class="about__subtitle">14-15 декабря 2023 года</div>
+			<div class="about__id">#whf2023</div>
+			<div class="about__video">
+				<div class="video-wrapper">
+					<div class="video-overlay" onclick="openFullscreen()"></div>
+					<iframe id="videoPlayer" width="336" height="190"
+						src="https://www.youtube.com/embed/kvU3kcUskvc?si=gAGQX0SYb3ieAwEW" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="about__part">
+				<a href="https://www.minsport.gov.ru/"><img src="images/part-2.png" alt="" class="about__part-img1"></a>
+				<a href="https://olympic.ru/"><img src="images/part-1.png" alt="" class="about__part-img2"></a>
+				<a href="https://fhr.ru/"><img src="images/part-4.png" alt="" class="about__part-img3"></a>
+				<a href="https://www.ligastavok.ru/"><img src="images/part-3.png" alt="" class="about__part-img4"></a>
+			</div>
+		</div>
+		<div class="about__slogan">
+			<div class="about__slogan-title">Главное событие года в профессиональном хоккее</div>
+		</div>
+	</section>
+	<section class="info">
+		<div class="container">
+			<div class="info__title">
+				Эксперты в области хоккея, спортсмены, тренеры, функционеры, судьи встречаются вместе
+				для обсуждения самых насущных вопросов хоккейной повестки
+			</div>
+			<div class="info__text">
+				Два дня работы и более десятка тем для обсуждения в целях выработки единых решений по наиболее актуальным
+				проблемам в области развития хоккея
+			</div>
+			<div class="info__content">
+				<ul>
+					<li>2<br />
+						<p class="info__content-text">дня работы</p>
+					</li>
+					<li>8<br />
+						<p class="info__content-text">ежегодный форум</p>
+					</li>
+					<li>15<br />
+						<p class="info__content-text">тем для обсуждения</p>
+					</li>
+					<li>10<br />
+						<p class="info__content-text">стран-участниц</p>
+					</li>
+					<li>1000<br />
+						<p class="info__content-text">участников ежегодно</p>
+					</li>
+				</ul>
+			</div>
+			<div class="info__tags">
+				<ul>
+					<li>тренеры</li>
+					<li>судейство</li>
+					<li>маркетинг</li>
+					<li>кейсы</li>
+					<li>менеджмент</li>
+					<li>практика</li>
+					<li>инновации</li>
+					<li>перспективы</li>
+					<li>психология</li>
+					<li>медицина</li>
+					<li>соревнования</li>
+				</ul>
+			</div>
+			<div class="infobtn">
+				<a onclick="togglePopup()" data-fancybox data-src="#modal" href="javascript:;" class="info__btn"
+					href="#">Регистрация открыта</a>
+			</div>
+			<div class="infobtn__text">
+				Форум проходит в режиме онлайн-трансляций. Просмотр на whf.hockey бесплатный и доступен всем, начало в
+				12:00, МСК (14-15 декабря). Регистрация дает право зрителям задавать вопросы и оставлять комментарии во
+				время прямых трансляций
+			</div>
+		</div>
+	</section>
+	<section class="advert">
+		<div class="container">
+			<div class="advert__img">
+				<img src="/images/LigaStavok_banner.svg" alt="Лига ставок">
+			</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="container">
+			<div class="news__title">Новости форума</div>
+			<div class="news__slider">
+				<div class="news__slider-item">
+					<div class="slider-item__img">
+						<img src="/images/slider-1.png" alt="" class="slider-img">
+						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+					</div>
+					<p class="slider-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+						операцию
+						и не сыграет до декабря</p>
+					<p class="slider-item__data">14 декабря 2023</p>
+				</div>
+				<div class="news__slider-item">
+					<div class="slider-item__img">
+						<img src="/images/slider-2.png" alt="" class="slider-img">
+						<img src="/images/slider-2mob.png" alt="" class="slider-img__mob">
+					</div>
+					<p class="slider-item__text">Мучитель Кузнецова понравился Панарину. Новый тренер «Рейнджерс» очаровал
+						свою главную звезду</p>
+					<p class="slider-item__data">14 декабря 2023</p>
+				</div>
+				<div class="news__slider-item">
+					<div class="slider-item__img">
+						<img src="/images/slider-3.png" alt="" class="slider-img">
+						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+					</div>
+					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
+						своих хоккеистов за поражение</p>
+					<p class="slider-item__data">15 декабря 2022</p>
+				</div>
+				<div class="news__slider-item">
+					<div class="slider-item__img">
+						<img src="/images/slider-3.png" alt="" class="slider-img">
+						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+					</div>
+					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
+						своих хоккеистов за поражение</p>
+					<p class="slider-item__data">15 декабря 2022</p>
+				</div>
+				<div class="news__slider-item">
+					<div class="slider-item__img">
+						<img src="/images/slider-3.png" alt="" class="slider-img">
+						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+					</div>
+					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
+						своих хоккеистов за поражение</p>
+					<p class="slider-item__data">15 декабря 2022</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="speaker">
+		<div class="container">
+			<div class="speaker__leader">
+				<img src="/images/ведущие.svg" alt="" class="speaker__leader-title">
+				<img src="/images/ведущие-mob.png" alt="" class="speaker__leader-titlemob">
+			</div>
+			<div class="speaker__leader-content">
+				<div class="leader-content__one">
+					<img src="/images/leader-1.svg" alt="" class="leader-content__img">
+					<img src="/images/Layer 7 copy 2.png" alt="" class="leader-content__img-mob">
+					<p class="leader__name">Виктор Гусев</p>
+					<p class="leader__text">Спортивный комментатор Первого канала</p>
+				</div>
+				<div class="leader-content__two">
+					<img src="/images/leader-2.svg" alt="" class="leader-content__img">
+					<img src="/images/Layer 7 copy 3.png" alt="" class="leader-content__img-mob">
+					<p class="leader__name">Роман Скворцов</p>
+					<p class="leader__text">Спортивный комментатор Матч ТВ</p>
+				</div>
+			</div>
+			<div class="speaker__title">
+				<img src="/images/спикеры.svg" alt="" class="speaker__title-img">
+				<img src="/images/спикеры-mob.png" alt="" class="speaker__title-imgmob">
+			</div>
+			<div class="speaker__content">
+				<ul class="speaker__list">
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Сергей Косилов</p>
+						<p class="speaker__item-post">Заместитель руководителя Главного управления по обеспечению участия в
+							Олимпийских спортивных мероприятиях Олимпийского комитета России</p>
+					</li>
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-4.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Александр Росляков</p>
+						<p class="speaker__item-post">Директор Департамента инвестиционного развития и управления
+							государственным имуществом Минспорта России</p>
+					</li>
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Илья Кузнецов</p>
+						<p class="speaker__item-post">Директор департамента креативных решений МатчТВ</p>
+					</li>
+				</ul>
+				<ul class="speaker__list list-two">
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-1.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Александр Кикнадзе</p>
+						<p class="speaker__item-post">Заместитель генерального директора Федерации хоккея России</p>
+					</li>
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-5.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Лидия Рогожинская</p>
+						<p class="speaker__item-post">ВРИО министра спорта Самарской области</p>
+					</li>
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-8.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Леонид Жестянников</p>
+						<p class="speaker__item-post">Первый вице-президент Российской ассоциации спортивных сооружений,
+							доктор экономических наук</p>
+					</li>
+				</ul>
+				<ul class="speaker__list list-three">
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-2.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Алексей Анисимов</p>
+						<p class="speaker__item-post">Главный арбитр Континентальной хоккейной лиги</p>
+					</li>
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-6.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Александр Егоров</p>
+						<p class="speaker__item-post">Заместитель генерального директора БК «Лига ставок»</p>
+					</li>
+				</ul>
+				<ul class="speaker__list list-four">
+					<li class="speaker__item">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-3.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Алексей Дроздов</p>
+						<p class="speaker__item-post">Директор Департамента спорта высших достижений Минспорта России</p>
+					</li>
+					<li class="speaker__item speaker__item10">
+						<div class="speaker__item-img-container">
+							<img src="/images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Илья Кузнецов</p>
+						<p class="speaker__item-post">Директор департамента креативных решений МатчТВ</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="prog">
+		<div class="container">
+			<div class="prog__title">
+				<img src="/images/Программа.svg" alt="" class="prog__title-img">
+				<img src="/images/Программа.png" alt="" class="prog__title-imgmob">
+			</div>
+			<div class="prog__data">
+				<button class="prog__data-btn" autofocus onclick="showProgram('first')">1 день. 15 декабря, пятница</button>
+				<button class="prog__data-btn data-btn" onclick="showProgram('second')">2 день. 16 декабря, суббота</button>
+			</div>
+			<div class="prog__list" id="program1">
+				<p class="prog__table-data">1 день. 15 декабря, пятница</p>
+				<p class="prog__table-name">Основная программа</p>
+				<div class="prog__item">
+					<p class="prog__item-time">12:00</p>
+					<p class="prog__item-text">Церемония открытия</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-1.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-1.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">12:30</p>
+					<p class="prog__item-text">Дисциплина «хоккей 3х3» как инструмент вовлечения молодежи в хоккей</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:00 — 14:15</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:15</p>
+					<p class="prog__item-text">Искусство быть судьей: этапы подготовки  и повышение качества хоккейного
+						судейства </p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:45 — 16:00</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item item-end">
+					<p class="prog__item-time">16:00</p>
+					<p class="prog__item-text">Системы подготовки тренеров на примере красной машины</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="prog__list" id="program1">
+				<p class="prog__table-data">1 день. 15 декабря, пятница</p>
+				<p class="prog__table-name">Тренерский семинар</p>
+				<div class="prog__item">
+					<p class="prog__item-time">12:00</p>
+					<p class="prog__item-text">Церемония открытия</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">12:30</p>
+					<p class="prog__item-text">Профессиональная тренерская культура: иметь и владеть</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">13:10</p>
+					<p class="prog__item-text">Инклюзивные практики в хоккее и их роль в воспитании юных спортсменов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">13:40 — 14:15</p>
+					<p class="prog__item-text">Перерыв 35 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:15</p>
+					<p class="prog__item-text">Актуальные проблемы технической подготовки юных хоккеистов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:00</p>
+					<p class="prog__item-text">Актуальные проблемы технической подготовки юных хоккеистов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:45 — 16:00</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item item-end">
+					<p class="prog__item-time">16:00</p>
+					<p class="prog__item-text">Системы подготовки тренеров на примере Красной машины</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="prog__list" id="program2" style="display: none;">
+				<p class="prog__table-data">1 день. 15 декабря, пятница</p>
+				<p class="prog__table-name">Основная программа</p>
+				<div class="prog__item">
+					<p class="prog__item-time">12:00</p>
+					<p class="prog__item-text">Церемония открытия</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-1.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-1.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">12:30</p>
+					<p class="prog__item-text">Дисциплина «хоккей 3х3» как инструмент вовлечения молодежи в хоккей</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:00 — 14:15</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:15</p>
+					<p class="prog__item-text">Искусство быть судьей: этапы подготовки  и повышение качества хоккейного
+						судейства </p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:45 — 16:00</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item item-end">
+					<p class="prog__item-time">16:00</p>
+					<p class="prog__item-text">Системы подготовки тренеров на примере красной машины</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="prog__list" id="program2" style="display: none;">
+				<p class="prog__table-data">1 день. 15 декабря, пятница</p>
+				<p class="prog__table-name">Тренерский семинар</p>
+				<div class="prog__item">
+					<p class="prog__item-time">12:00</p>
+					<p class="prog__item-text">Церемония открытия</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">12:30</p>
+					<p class="prog__item-text">Профессиональная тренерская культура: иметь и владеть</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">13:10</p>
+					<p class="prog__item-text">Инклюзивные практики в хоккее и их роль в воспитании юных спортсменов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">13:40 — 14:15</p>
+					<p class="prog__item-text">Перерыв 35 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">14:15</p>
+					<p class="prog__item-text">Актуальные проблемы технической подготовки юных хоккеистов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:00</p>
+					<p class="prog__item-text">Актуальные проблемы технической подготовки юных хоккеистов</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="prog__item">
+					<p class="prog__item-time">15:45 — 16:00</p>
+					<p class="prog__item-text">Перерыв 15 мин</p>
+					<div class="prog__item-list">
+					</div>
+				</div>
+				<div class="prog__item item-end">
+					<p class="prog__item-time">16:00</p>
+					<p class="prog__item-text">Системы подготовки тренеров на примере Красной машины</p>
+					<div class="prog__item-list">
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-2.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Александр Кикнадзе</p>
+									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-3.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Алексей Дроздов</p>
+									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-4.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Илья Кузнецов</p>
+									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-6.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+						</a>
+						<a href="#">
+							<div class="overlay">
+								<img src="/images/icon-5.png" alt="">
+								<div class="prog__img-content">
+									<p class="prog__img-title">Виктор Гусев</p>
+									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
+								</div>
+							</div>
+							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="part">
+		<div class="part__list">
+			<div class="part__item">
+				<img src="/images/part-4.png" alt="" class="tooltip part__item1" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Хоккей России</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://fhr.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<div class="part__name">Организатор</div>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-3.png" alt="" class="tooltip part__item2" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Лига Ставок</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://www.ligastavok.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Генеральный партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-2.png" alt="" class="tooltip part__item3" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Минспорт России</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://www.minsport.gov.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Поддержка</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-1.png" alt="" class="tooltip part__item4" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Олимпийский комитет</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://olympic.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Поддержка</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-13.png" alt="" class="tooltip part__item5" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">TPS</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://tps.hockey/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-8.png" alt="" class="tooltip part__item6" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Henderson</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://henderson.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-9.png" alt="" class="tooltip part__item7" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Балтика</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://corporate.baltika.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-6.png" alt="" class="tooltip part__item8" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">РО-Спорт</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://ros-sport.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-5.png" alt="" class="tooltip part__item9" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Норникель</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://www.nornickel.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-7.png" alt="" class="tooltip part__item10" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">СКА</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://www.ska.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Партнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-14.png" alt="" class="tooltip part__item11" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Sport Build</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://s-a-r.ru/sportbuild/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Медиапартнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-12.png" alt="" class="tooltip part__item12" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Индустрия спорта</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://индустрия-спорта.рф/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Медиапартнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-10.png" alt="" class="tooltip part__item13" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">Медиа</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="#" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Медиапартнер</p>
+			</div>
+			<div class="part__item">
+				<img src="/images/part-11.png" alt="" class="tooltip part__item14" data-tooltip-content="#tooltip_content">
+				<div class="tooltip_templates">
+					<div id="tooltip_content">
+						<p class="part__title">СБК</p>
+						<p class="part__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+							несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+							отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали
+							небезизвестный универсальный код речей
+						</p>
+						<a href="https://ao-sbk.ru/" class="part__link">Посетить сайт</a>
+					</div>
+				</div>
+				<p class="part__name">Медиапартнер</p>
+			</div>
+		</div>
+	</section>
+	<section class="media">
+		<div class="container">
+			<div class="media__title">
+				<img src="/images/Медиа.svg" alt="" class="media__title-img">
+				<img src="/images/Медиа-mob.png" alt="" class="media__title-imgmob">
+			</div>
+		</div>
+		<div class="media__content">
+			<div class="media__list-one">
+				<div class="media__list-img">
+					<img src="images/media-1.png" alt="">
+				</div>
+				<div class="media__list-img">
+					<img src="images/media-2.png" alt="">
+				</div>
+				<div class="media__list-img list-mob">
+					<img src="images/media-3.png" alt="">
+				</div>
+			</div>
+			<div class="media__list-mob">
+				<div class="media__list-img">
+					<img src="images/media-3.png" alt="">
+				</div>
+				<div class="media__list-img">
+					<img src="images/media-4.png" alt="">
+				</div>
+			</div>
+			<div class="media__list-two">
+				<div class="media__list-img list-mob">
+					<img src="images/media-4.png" alt="">
+				</div>
+				<div class="media__list-img">
+					<img src="images/media-5.png" alt="">
+				</div>
+				<div class="media__list-img">
+					<img src="images/media-6.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="media__btn">
+				<div class="meadia__foto">
+					<a href="#" class="meadia__foto-link">фотоотчеты по года</a>
+				</div>
+				<a href="images/media-1.png" class="media__foto-btn" data-fancybox="gallery" data-caption="">Смотреть
+					альбом
+				</a>
+				<div class="media__foto-gallery">
+					<a href="images/media-2.png" data-fancybox="gallery" data-caption="">
+						<img src="images/media-2.png" />
+					</a>
+					<a href="images/media-3.png" data-fancybox="gallery" data-caption="">
+						<img src="images/media-3.png" />
+					</a>
+					<a href="images/media-4.png" data-fancybox="gallery" data-caption="">
+						<img src="images/media-4.png" />
+					</a>
+					<a href="images/media-5.png" data-fancybox="gallery" data-caption="">
+						<img src="images/media-5.png" />
+					</a>
+					<a href="images/media-6.png" data-fancybox="gallery" data-caption="">
+						<img src="images/media-6.png" />
+					</a>
+				</div>
+			</div>
+			<div class="media__video">
+				<div class="media__video-title">Видеотрансляции WHF</div>
+				<div class="media__slider">
+					<div class="media__slider-item">
+						<div class="media-wrapper">
+							<div class="media-overlay" onclick="hideVideo(event)"></div>
+							<div class="media-overlay__mob" onclick="hideVideo(event)"></div>
+							<iframe width="381" height="214"
+								src="https://www.youtube.com/embed/z4c6Nfs4j-A?si=wnVEyzr4PJQrcH8e" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<p class="media-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+							операцию
+							и не сыграет до декабря</p>
+						<p class="media-item__data">14 декабря 2023</p>
+					</div>
+					<div class="media__slider-item">
+						<div class="media-wrapper">
+							<div class="media-overlay" onclick="hideVideo(event)"></div>
+							<div class="media-overlay__mob" onclick="hideVideo(event)"></div>
+							<iframe width="381" height="214"
+								src="https://www.youtube.com/embed/z4c6Nfs4j-A?si=wnVEyzr4PJQrcH8e" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<p class="media-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+							операцию
+							и не сыграет до декабря</p>
+						<p class="media-item__data">14 декабря 2023</p>
+					</div>
+					<div class="media__slider-item">
+						<div class="media-wrapper">
+							<div class="media-overlay" onclick="hideVideo(event)"></div>
+							<div class="media-overlay__mob" onclick="hideVideo(event)"></div>
+							<iframe width="381" height="214"
+								src="https://www.youtube.com/embed/z4c6Nfs4j-A?si=wnVEyzr4PJQrcH8e" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<p class="media-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+							операцию
+							и не сыграет до декабря</p>
+						<p class="media-item__data">14 декабря 2023</p>
+					</div>
+					<div class="media__slider-item">
+						<div class="media-wrapper">
+							<div class="media-overlay" onclick="hideVideo(event)"></div>
+							<div class="media-overlay__mob" onclick="hideVideo(event)"></div>
+							<iframe width="381" height="214"
+								src="https://www.youtube.com/embed/z4c6Nfs4j-A?si=wnVEyzr4PJQrcH8e" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<p class="media-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+							операцию
+							и не сыграет до декабря</p>
+						<p class="media-item__data">14 декабря 2023</p>
+					</div>
+					<div class="media__slider-item">
+						<div class="media-wrapper">
+							<div class="media-overlay" onclick="hideVideo(event)"></div>
+							<div class="media-overlay__mob" onclick="hideVideo(event)"></div>
+							<iframe width="381" height="214"
+								src="https://www.youtube.com/embed/z4c6Nfs4j-A?si=wnVEyzr4PJQrcH8e" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<p class="media-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
+							операцию
+							и не сыграет до декабря</p>
+						<p class="media-item__data">14 декабря 2023</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__social">
+				<div class="footer__social-content">
+					<div class="footer__social-title">Расскажите о WHF в своих соцсетях</div>
+					<ul class="socials">
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-tg"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-vk"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-ok"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-veiber"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-whats"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-icon"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__box">
+				<form class="email-form">
+					<p class="email-form__text">Оставьте свою почту, мы пришлем <br />уведомление о начале WHF</p>
+					<div class="email-form__btn">
+						<input class="email-input" type="email" placeholder="" id="email">
+						<button class="submit-btn" onclick="submitEmail()"></button>
+					</div>
+				</form>
+				<a class="footer-aical"
+					href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20231015T120000%0ADTEND:20231015T130000%0ASUMMARY:Meeting%0ADESCRIPTION:This%20is%20a%20meeting%20reminder%0ALOCATION:Coffee%20shop%0AEND:VEVENT%0AEND:VCALENDAR"
+					download="event.ics"><img src="images/Apple iCal.svg" alt=""><span>Добавить событие<br />в Apple
+						iCal</span>
+				</a>
+				<a class="footer-googlecal"
+					href="https://www.google.com/calendar/render?action=TEMPLATE&text=Название+события&dates=20231015T050000Z/20231015T060000Z&details=Описание+события&location=Место+события&sf=true&output=xml"
+					download="event.ics"><img src="images/Google Calendar.svg" alt=""><span>Добавить событие<br />в Google
+						Calendar</span>
+				</a>
+				<div class="footer-contact">
+					<div class="footer-contact__img">
+						<img src="images/_Layer_.svg" alt="">
+						<img src="images/Line 192.svg" alt="">
+						<img src="images/Layer_1.svg" alt="">
+					</div>
+					<p class="footer-contact__text">Оргкомитет WHF<a href="mailto:info@whf.hockey">info@whf.hockey</a></p>
+					<p class="footer-contact__mintext">По вопросам организации и сотрудничества</p>
+				</div>
+				<div class="footer-timer">
+					<p class="footer-timer__text">До начала форума осталось</p>
+					<div class="timer">
+						<div class="timer__items">
+							<div class="timer__item timer__days">00</div>
+							<div class="timer__item timer__hours">00</div>
+							<div class="timer__item timer__minutes">00</div>
+						</div>
+					</div>
+					<div class="footer-btn">
+						<a onclick="togglePopup()" data-fancybox data-src="#modal" href="javascript:;" class="footer__btn"
+							href="#">Регистрация
+							открыта</a>
+					</div>
+					<p class="footer-timer__id">#whf2023</p>
+				</div>
+				<div class="footer-but">
+					<a href="#header" class="footer-top__link"></a>
+					<span>наверх</span>
+				</div>
+				<img src="images/Больше проектов FHR.png" alt="" class="footer__img-title">
+				<div class="footer__proect">
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Всероссийская хоккейная лига</p>
+						<div class="proect-item__list">
+							<a href="vhlru.ru" class="proect-item__link">vhlru.ru</a>
+							<a href="vhlru.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Национальная молодёжная хоккейная лига</p>
+						<div class="proect-item__list">
+							<a href="nmhl.fhr.ru" class="proect-item__link">nmhl.fhr.ru</a>
+							<a href="nmhl.fhr.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Все о детском и юношеском хоккее в России</p>
+						<div class="proect-item__list">
+							<a href="junior.fhr.ru" class="proect-item__link">junior.fhr.ru</a>
+							<a href="junior.fhr.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Образовательный хоккейный портал «играйвроссии.рф»</p>
+						<div class="proect-item__list">
+							<a href="играйвроссии.рф" class="proect-item__link">играйвроссии.рф </a>
+							<a href="играйвроссии.рф" class="proect-item__btn"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__confic">Политика конфиденциальности. Для лиц старше 18 лет. Дизайн SportNoise <br />©
+					World Hockey Forum. 1991—2023.</div>
+			</div>
+			<div class="footer-but__mob">
+				<a href="#header" class="footer-top__link-mob"></a>
+				<span>наверх</span>
+			</div>
+		</div>
+	</footer>
+	<!--footer когда начнется форум -->
+	<!--
+		<footer class="footer">
+		<div class="container">
+			<div class="footer__social">
+				<div class="footer__social-content">
+					<div class="footer__social-title">Расскажите о WHF в своих соцсетях</div>
+					<ul class="socials">
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-tg"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-vk"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-ok"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-veiber"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-whats"></a>
+						</li>
+						<li class="socials-item">
+							<a href="#" class="socials-link socials-link-icon"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__box">
+				<form class="email-form">
+					<p class="email-form__text">Оставьте свою почту, мы пришлем <br />уведомление о начале WHF</p>
+					<div class="email-form__btn">
+						<input class="email-input" type="email" placeholder="" id="email">
+						<button class="submit-btn" onclick="submitEmail()"></button>
+					</div>
+				</form>
+				<a class="footer-aical"
+					href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20231015T120000%0ADTEND:20231015T130000%0ASUMMARY:Meeting%0ADESCRIPTION:This%20is%20a%20meeting%20reminder%0ALOCATION:Coffee%20shop%0AEND:VEVENT%0AEND:VCALENDAR"
+					download="event.ics"><img src="images/Apple iCal.svg" alt=""><span>Добавить событие<br />в Apple
+						iCal</span>
+				</a>
+				<a class="footer-googlecal"
+					href="https://www.google.com/calendar/render?action=TEMPLATE&text=Название+события&dates=20231015T050000Z/20231015T060000Z&details=Описание+события&location=Место+события&sf=true&output=xml"
+					download="event.ics"><img src="images/Google Calendar.svg" alt=""><span>Добавить событие<br />в Google
+						Calendar</span>
+				</a>
+				<div class="footer-contact" style="width: 978px;">
+					<div class="footer-contact__img">
+						<img src="images/_Layer_.svg" alt="">
+						<img src="images/Line 192.svg" alt="">
+						<img src="images/Layer_1.svg" alt="">
+					</div>
+					<p class="footer-contact__text">Оргкомитет WHF<a href="mailto:info@whf.hockey">info@whf.hockey</a></p>
+					<div class="footer-contact__forum" style="display: flex; justify-content: space-between;">
+					   <p class="footer-contact__mintext">По вопросам организации и сотрудничества</p>
+					   <p class="footer-timer__id">#whf2023</p>
+					</div>
+				</div>
+				<div class="footer-but">
+					<a href="#" class="footer-top__link"></a>
+					<span>наверх</span>
+				</div>
+				<img src="images/Больше проектов FHR.png" alt="" class="footer__img-title">
+				<div class="footer__proect">
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Всероссийская хоккейная лига</p>
+						<div class="proect-item__list">
+							<a href="vhlru.ru" class="proect-item__link">vhlru.ru</a>
+							<a href="vhlru.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Национальная молодёжная хоккейная лига</p>
+						<div class="proect-item__list">
+							<a href="nmhl.fhr.ru" class="proect-item__link">nmhl.fhr.ru</a>
+							<a href="nmhl.fhr.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Все о детском и юношеском хоккее в России</p>
+						<div class="proect-item__list">
+							<a href="junior.fhr.ru" class="proect-item__link">junior.fhr.ru</a>
+							<a href="junior.fhr.ru" class="proect-item__btn"></a>
+						</div>
+					</div>
+					<div class="footer__proect-item">
+						<p class="proect-item__text">Образовательный хоккейный портал «играйвроссии.рф»</p>
+						<div class="proect-item__list">
+							<a href="играйвроссии.рф" class="proect-item__link">играйвроссии.рф </a>
+							<a href="играйвроссии.рф" class="proect-item__btn"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__confic">Политика конфиденциальности.  Для лиц старше 18 лет.  Дизайн SportNoise <br/>© World Hockey Forum. 1991—2023.</div>
+			</div>
+		</div>
+	</footer>
+	 -->
+
+	<div class="cookie-bar">
+		<div class="container">
+			<div class="cookie-bar__content">
+				<img src="images/cookie.svg" alt="">
+				<p class="cookie-bar__text">На сайте используются cookies. Продолжая использовать сайт, вы принимаете
+					условия
+				</p>
+				<button class="cookie-btn">Принять</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="popup">
+		<div class="popup-content">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close" onclick="togglePopup()"></span>
+			<h2>вход</h2>
+			<div class="popup-entr">
+				<label for="email">E-mail</label>
+				<input type="text" id="email" placeholder="">
+				<label for="psw">Пароль</label>
+				<div class="password-icon">
+					<input type="password" id="passwordInput" placeholder="">
+					<i class="password-icon__img" onclick="togglePassword()" id="toggleIcon"></i>
+				</div>
+			</div>
+			<div class="popup-entr__btn">
+				<div class="popup-entr__checkbox">
+					<input type="checkbox" id="rememberMe" name="rememberMe" class="styled-checkbox"
+						onchange="changeImage()">
+					<label for="rememberMe" class="custom-checkbox">Запомнить</label>
+				</div>
+				<button class="entr__box-btn" onclick="login()">Войти</button>
+			</div>
+			<div class="popup__btn-end">
+				<button class="forgot-password-btn" onclick="openPopup()">Забыли пароль?</button>
+				<button class="reg-btn" onclick="openSignupPage()">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Всплывающее окно для восстановления пароля -->
+	<div class="popup-end" id="popup-end">
+		<div class="popup-content__end">
+			<img class="popup-img" src="images/popup.png" alt="">
+			<span class="close-end" onclick="closePopup()"></span>
+			<h2>Восстановление пароля</h2>
+			<label for="email">Email</label>
+			<form>
+				<input type="email" id="email" name="email" required>
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
