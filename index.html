@@ -35,9 +35,9 @@
 					<nav class="header__menu">
 						<ul class="menu__list">
 							<li><a href="#" class="menu__link">главная</a></li>
-							<li><a href="/news.html">О форуме</a></li>
+							<li><a href="https://dzuba110729.github.io/Word-Hockey-Forum/news.html">О форуме</a></li>
 							<li><a href="#">Спикеры</a></li>
-							<li><a href="/policy.html">Программа</a></li>
+							<li><a href="https://dzuba110729.github.io/Word-Hockey-Forum/policy.html">Программа</a></li>
 							<li><a href="#">Медиа</a></li>
 						</ul>
 						<a onclick="togglePopup()" class="header__btn-mob" href="#">Войти /
@@ -130,13 +130,21 @@
 			<div class="about__subtitle">14-15 декабря 2023 года</div>
 			<div class="about__id">#whf2023</div>
 			<div class="about__video">
-				<div class="video-wrapper">
-					<div class="video-overlay" onclick="openFullscreen()"></div>
-					<iframe id="videoPlayer" width="336" height="190"
-						src="https://www.youtube.com/embed/kvU3kcUskvc?si=gAGQX0SYb3ieAwEW" title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen></iframe>
+				<div class="video-wrapper" onclick="openModal()">
+					<div class="video-overlay"></div>
+					<video id="smallVideo" width="336" height="190" loop autoplay muted>
+						<source src="video/426X240_минипревью форум_1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div id="videoModal" class="modal">
+					<div class="modal-content">
+						<span class="close-video" onclick="closeModal()">&times;</span>
+						<video id="fullScreenVideo" width="100%" height="100%" controls>
+							<source src="video/Форум WHF ролик 2023_1.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div> 
 				</div>
 			</div>
 			<div class="about__part">
@@ -218,8 +226,8 @@
 			<div class="news__slider">
 				<div class="news__slider-item">
 					<div class="slider-item__img">
-						<img src="/images/slider-1.png" alt="" class="slider-img">
-						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+						<img src="images/slider-1.png" alt="" class="slider-img">
+						<img src="images/slider-1mob.png" alt="" class="slider-img__mob">
 					</div>
 					<p class="slider-item__text">«Тампа» начнет сезон без русского топ-вратаря. Василевский перенес
 						операцию
@@ -228,8 +236,8 @@
 				</div>
 				<div class="news__slider-item">
 					<div class="slider-item__img">
-						<img src="/images/slider-2.png" alt="" class="slider-img">
-						<img src="/images/slider-2mob.png" alt="" class="slider-img__mob">
+						<img src="images/slider-2.png" alt="" class="slider-img">
+						<img src="images/slider-2mob.png" alt="" class="slider-img__mob">
 					</div>
 					<p class="slider-item__text">Мучитель Кузнецова понравился Панарину. Новый тренер «Рейнджерс» очаровал
 						свою главную звезду</p>
@@ -237,8 +245,8 @@
 				</div>
 				<div class="news__slider-item">
 					<div class="slider-item__img">
-						<img src="/images/slider-3.png" alt="" class="slider-img">
-						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+						<img src="images/slider-3.png" alt="" class="slider-img">
+						<img src="images/slider-1mob.png" alt="" class="slider-img__mob">
 					</div>
 					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
 						своих хоккеистов за поражение</p>
@@ -246,8 +254,8 @@
 				</div>
 				<div class="news__slider-item">
 					<div class="slider-item__img">
-						<img src="/images/slider-3.png" alt="" class="slider-img">
-						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+						<img src="images/slider-3.png" alt="" class="slider-img">
+						<img src="images/slider-1mob.png" alt="" class="slider-img__mob">
 					</div>
 					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
 						своих хоккеистов за поражение</p>
@@ -255,8 +263,8 @@
 				</div>
 				<div class="news__slider-item">
 					<div class="slider-item__img">
-						<img src="/images/slider-3.png" alt="" class="slider-img">
-						<img src="/images/slider-1mob.png" alt="" class="slider-img__mob">
+						<img src="images/slider-3.png" alt="" class="slider-img">
+						<img src="images/slider-1mob.png" alt="" class="slider-img__mob">
 					</div>
 					<p class="slider-item__text">«Хочу, чтобы игроки засунули свои языки куда подальше». Тренер уничтожил
 						своих хоккеистов за поражение</p>
@@ -268,48 +276,69 @@
 	<section class="speaker">
 		<div class="container">
 			<div class="speaker__leader">
-				<img src="/images/ведущие.svg" alt="" class="speaker__leader-title">
-				<img src="/images/ведущие-mob.png" alt="" class="speaker__leader-titlemob">
+				<img src="images/ведущие.svg" alt="" class="speaker__leader-title">
 			</div>
 			<div class="speaker__leader-content">
 				<div class="leader-content__one">
-					<img src="/images/leader-1.svg" alt="" class="leader-content__img">
-					<img src="/images/Layer 7 copy 2.png" alt="" class="leader-content__img-mob">
+					<img src="images/leader-1.svg" alt="" class="leader-content__img">
+					<img src="images/Layer 7 copy 2.png" alt="" class="leader-content__img-mob">
 					<p class="leader__name">Виктор Гусев</p>
 					<p class="leader__text">Спортивный комментатор Первого канала</p>
 				</div>
 				<div class="leader-content__two">
-					<img src="/images/leader-2.svg" alt="" class="leader-content__img">
-					<img src="/images/Layer 7 copy 3.png" alt="" class="leader-content__img-mob">
+					<img src="images/leader-2.svg" alt="" class="leader-content__img">
+					<img src="images/Layer 7 copy 3.png" alt="" class="leader-content__img-mob">
 					<p class="leader__name">Роман Скворцов</p>
 					<p class="leader__text">Спортивный комментатор Матч ТВ</p>
 				</div>
 			</div>
 			<div class="speaker__title">
-				<img src="/images/спикеры.svg" alt="" class="speaker__title-img">
-				<img src="/images/спикеры-mob.png" alt="" class="speaker__title-imgmob">
+				<img src="images/спикеры.svg" alt="" class="speaker__title-img">
+				<img src="images/спикеры-mob.png" alt="" class="speaker__title-imgmob">
 			</div>
 			<div class="speaker__content">
 				<ul class="speaker__list">
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Сергей Косилов</p>
 						<p class="speaker__item-post">Заместитель руководителя Главного управления по обеспечению участия в
 							Олимпийских спортивных мероприятиях Олимпийского комитета России</p>
 					</li>
+					<li class="speaker__item speaker__item-mob">
+						<div class="speaker__item-img-container">
+							<img src="images/Rectangle 139-2.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Алексей Анисимов</p>
+						<p class="speaker__item-post">Главный арбитр Континентальной хоккейной лиги</p>
+					</li>
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-4.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-4.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Александр Росляков</p>
 						<p class="speaker__item-post">Директор Департамента инвестиционного развития и управления
 							государственным имуществом Минспорта России</p>
 					</li>
-					<li class="speaker__item">
+					<li class="speaker__item speaker__item-mob">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-6.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Александр Егоров</p>
+						<p class="speaker__item-post">Заместитель генерального директора БК «Лига ставок»</p>
+					</li>
+					<li class="speaker__item speaker__item-mob">
+						<div class="speaker__item-img-container">
+							<img src="images/Rectangle 139-8.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Леонид Жестянников</p>
+						<p class="speaker__item-post">Первый вице-президент Российской ассоциации спортивных сооружений,
+							доктор экономических наук</p>
+					</li>
+					<li class="speaker__item speaker__item-desc">
+						<div class="speaker__item-img-container">
+							<img src="images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Илья Кузнецов</p>
 						<p class="speaker__item-post">Директор департамента креативных решений МатчТВ</p>
@@ -318,21 +347,35 @@
 				<ul class="speaker__list list-two">
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-1.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-1.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Александр Кикнадзе</p>
 						<p class="speaker__item-post">Заместитель генерального директора Федерации хоккея России</p>
 					</li>
+					<li class="speaker__item speaker__item-mob">
+						<div class="speaker__item-img-container">
+							<img src="images/Rectangle 139-3.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Алексей Дроздов</p>
+						<p class="speaker__item-post">Директор Департамента спорта высших достижений Минспорта России</p>
+					</li>
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-5.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-5.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Лидия Рогожинская</p>
 						<p class="speaker__item-post">ВРИО министра спорта Самарской области</p>
 					</li>
-					<li class="speaker__item">
+					<li class="speaker__item speaker__item-mob">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-8.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
+						</div>
+						<p class="speaker__item-name">Илья Кузнецов</p>
+						<p class="speaker__item-post">Директор департамента креативных решений МатчТВ</p>
+					</li>
+					<li class="speaker__item speaker__item-desc">
+						<div class="speaker__item-img-container">
+							<img src="images/Rectangle 139-8.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Леонид Жестянников</p>
 						<p class="speaker__item-post">Первый вице-президент Российской ассоциации спортивных сооружений,
@@ -342,14 +385,14 @@
 				<ul class="speaker__list list-three">
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-2.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-2.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Алексей Анисимов</p>
 						<p class="speaker__item-post">Главный арбитр Континентальной хоккейной лиги</p>
 					</li>
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-6.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-6.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Александр Егоров</p>
 						<p class="speaker__item-post">Заместитель генерального директора БК «Лига ставок»</p>
@@ -358,14 +401,14 @@
 				<ul class="speaker__list list-four">
 					<li class="speaker__item">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-3.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-3.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Алексей Дроздов</p>
 						<p class="speaker__item-post">Директор Департамента спорта высших достижений Минспорта России</p>
 					</li>
 					<li class="speaker__item speaker__item10">
 						<div class="speaker__item-img-container">
-							<img src="/images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
+							<img src="images/Rectangle 139-7.jpg" alt="" class="speaker__item-img">
 						</div>
 						<p class="speaker__item-name">Илья Кузнецов</p>
 						<p class="speaker__item-post">Директор департамента креативных решений МатчТВ</p>
@@ -377,8 +420,7 @@
 	<section class="prog">
 		<div class="container">
 			<div class="prog__title">
-				<img src="/images/Программа.svg" alt="" class="prog__title-img">
-				<img src="/images/Программа.png" alt="" class="prog__title-imgmob">
+				<img src="images/Программа.svg" alt="" class="prog__title-img">
 			</div>
 			<div class="prog__data">
 				<button class="prog__data-btn" autofocus onclick="showProgram('first')">1 день. 15 декабря, пятница</button>
@@ -393,43 +435,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-1.png" alt="">
+								<img src="images/icon-1.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-1.png" alt="">
+							<img class="prog__img-icon" src="images/icon-1.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -439,33 +481,33 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -482,43 +524,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -534,53 +576,53 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -594,43 +636,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -640,13 +682,13 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -656,33 +698,33 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -698,23 +740,23 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -724,13 +766,13 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -746,53 +788,53 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -806,43 +848,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-1.png" alt="">
+								<img src="images/icon-1.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-1.png" alt="">
+							<img class="prog__img-icon" src="images/icon-1.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -852,33 +894,33 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -895,43 +937,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -947,53 +989,53 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1007,43 +1049,43 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1053,13 +1095,13 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1069,33 +1111,33 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1111,23 +1153,23 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1137,13 +1179,13 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1159,53 +1201,53 @@
 					<div class="prog__item-list">
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-2.png" alt="">
+								<img src="images/icon-2.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Александр Кикнадзе</p>
 									<p class="prog__img-text">Заместитель генерального директора Федерации хоккея России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-2.png" alt="">
+							<img class="prog__img-icon" src="images/icon-2.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-3.png" alt="">
+								<img src="images/icon-3.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Алексей Дроздов</p>
 									<p class="prog__img-text">Директор Департамента спорта высших достижений Минспорта России</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-3.png" alt="">
+							<img class="prog__img-icon" src="images/icon-3.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-4.png" alt="">
+								<img src="images/icon-4.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Илья Кузнецов</p>
 									<p class="prog__img-text">Директор департамента креативных решений МатчТВ</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-4.png" alt="">
+							<img class="prog__img-icon" src="images/icon-4.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-6.png" alt="">
+								<img src="images/icon-6.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-6.png" alt="">
+							<img class="prog__img-icon" src="images/icon-6.png" alt="">
 						</a>
 						<a href="#">
 							<div class="overlay">
-								<img src="/images/icon-5.png" alt="">
+								<img src="images/icon-5.png" alt="">
 								<div class="prog__img-content">
 									<p class="prog__img-title">Виктор Гусев</p>
 									<p class="prog__img-text">Спортивный комментатор Первого канала</p>
 								</div>
 							</div>
-							<img class="prog__img-icon" src="/images/icon-5.png" alt="">
+							<img class="prog__img-icon" src="images/icon-5.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1215,7 +1257,7 @@
 	<section class="part">
 		<div class="part__list">
 			<div class="part__item">
-				<img src="/images/part-4.png" alt="" class="tooltip part__item1" data-tooltip-content="#tooltip_content">
+				<img src="images/640px-Лого_ФХР 2 (2).png" alt="" class="tooltip part__item1" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Хоккей России</p>
@@ -1230,7 +1272,7 @@
 				<div class="part__name">Организатор</div>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-3.png" alt="" class="tooltip part__item2" data-tooltip-content="#tooltip_content">
+				<img src="images/image 19 (1).png" alt="" class="tooltip part__item2" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Лига Ставок</p>
@@ -1245,7 +1287,7 @@
 				<p class="part__name">Генеральный партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-2.png" alt="" class="tooltip part__item3" data-tooltip-content="#tooltip_content">
+				<img src="images/Preview 2023-09-25 в 21.19 1 (1).png" alt="" class="tooltip part__item3" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Минспорт России</p>
@@ -1260,7 +1302,7 @@
 				<p class="part__name">Поддержка</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-1.png" alt="" class="tooltip part__item4" data-tooltip-content="#tooltip_content">
+				<img src="images/Preview 2023-09-23 в 21.33 (2).png" alt="" class="tooltip part__item4" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Олимпийский комитет</p>
@@ -1275,7 +1317,7 @@
 				<p class="part__name">Поддержка</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-13.png" alt="" class="tooltip part__item5" data-tooltip-content="#tooltip_content">
+				<img src="images/part-13.png" alt="" class="tooltip part__item5" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">TPS</p>
@@ -1290,7 +1332,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-8.png" alt="" class="tooltip part__item6" data-tooltip-content="#tooltip_content">
+				<img src="images/part-8.png" alt="" class="tooltip part__item6" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Henderson</p>
@@ -1305,7 +1347,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-9.png" alt="" class="tooltip part__item7" data-tooltip-content="#tooltip_content">
+				<img src="images/part-9.png" alt="" class="tooltip part__item7" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Балтика</p>
@@ -1320,7 +1362,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-6.png" alt="" class="tooltip part__item8" data-tooltip-content="#tooltip_content">
+				<img src="images/part-6.png" alt="" class="tooltip part__item8" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">РО-Спорт</p>
@@ -1335,7 +1377,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-5.png" alt="" class="tooltip part__item9" data-tooltip-content="#tooltip_content">
+				<img src="images/part-5.png" alt="" class="tooltip part__item9" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Норникель</p>
@@ -1350,7 +1392,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-7.png" alt="" class="tooltip part__item10" data-tooltip-content="#tooltip_content">
+				<img src="images/part-7.png" alt="" class="tooltip part__item10" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">СКА</p>
@@ -1365,7 +1407,7 @@
 				<p class="part__name">Партнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-14.png" alt="" class="tooltip part__item11" data-tooltip-content="#tooltip_content">
+				<img src="images/part-14.png" alt="" class="tooltip part__item11" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Sport Build</p>
@@ -1380,7 +1422,7 @@
 				<p class="part__name">Медиапартнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-12.png" alt="" class="tooltip part__item12" data-tooltip-content="#tooltip_content">
+				<img src="images/part-12.png" alt="" class="tooltip part__item12" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Индустрия спорта</p>
@@ -1395,7 +1437,7 @@
 				<p class="part__name">Медиапартнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-10.png" alt="" class="tooltip part__item13" data-tooltip-content="#tooltip_content">
+				<img src="images/part-10.png" alt="" class="tooltip part__item13" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">Медиа</p>
@@ -1410,7 +1452,7 @@
 				<p class="part__name">Медиапартнер</p>
 			</div>
 			<div class="part__item">
-				<img src="/images/part-11.png" alt="" class="tooltip part__item14" data-tooltip-content="#tooltip_content">
+				<img src="images/part-11.png" alt="" class="tooltip part__item14" data-tooltip-content="#tooltip_content">
 				<div class="tooltip_templates">
 					<div id="tooltip_content">
 						<p class="part__title">СБК</p>
@@ -1429,32 +1471,22 @@
 	<section class="media">
 		<div class="container">
 			<div class="media__title">
-				<img src="/images/Медиа.svg" alt="" class="media__title-img">
-				<img src="/images/Медиа-mob.png" alt="" class="media__title-imgmob">
+				<img src="images/Медиа.svg" alt="" class="media__title-img">
+				<img src="images/Медиа-mob.png" alt="" class="media__title-imgmob">
 			</div>
 		</div>
 		<div class="media__content">
-			<div class="media__list-one">
+			<div class="media__list">
 				<div class="media__list-img">
 					<img src="images/media-1.png" alt="">
 				</div>
 				<div class="media__list-img">
 					<img src="images/media-2.png" alt="">
 				</div>
-				<div class="media__list-img list-mob">
-					<img src="images/media-3.png" alt="">
-				</div>
-			</div>
-			<div class="media__list-mob">
 				<div class="media__list-img">
 					<img src="images/media-3.png" alt="">
 				</div>
 				<div class="media__list-img">
-					<img src="images/media-4.png" alt="">
-				</div>
-			</div>
-			<div class="media__list-two">
-				<div class="media__list-img list-mob">
 					<img src="images/media-4.png" alt="">
 				</div>
 				<div class="media__list-img">
@@ -1787,6 +1819,7 @@
 	</footer>
 	 -->
 
+
 	<div class="cookie-bar">
 		<div class="container">
 			<div class="cookie-bar__content">
@@ -1850,5 +1883,7 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
+
+</html>
 
 </html>
